@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:#171717;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    
+}
+h1{
+    color: white;
+}
+.section{
+    max-width: 900px;
+    width: auto;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 21px 7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 21px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 21px 7px rgba(0,0,0,0.75);
+}
+.poster{
+    padding: 0;
+}
+.poster img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 0 0 1rem
+}
+.login-container{
+    background-color: #fff;
+    border-radius: 0 1rem 1rem 0;
+}
+.logo{
+    width: 120px;
+}
+.login-container h6{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.login-container a{
+    text-decoration: none;
+}
+#firstName {
+  border-radius: 0;
+    margin-bottom: 10px;
+}
+#password {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+input[type="email"] {
+    margin-bottom: 10px;
+    border-radius: 0%;
+}
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.form-floating{position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+.effect-8,
+.effect-9{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
+
+
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.3s; border-radius: .25rem;}
+.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.4s; border-radius: .25rem;}
+.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}
+
+
+
+@media screen and (max-width: 767px){
+    .login-container{
+        border-radius: 1rem;
+    }
+    .section{
+        max-width: 480px;
+        min-width: 320px;
+        overflow: hidden;
+    }
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  
+

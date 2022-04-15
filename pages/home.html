@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a4f9369c2e.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <!-- css style -->
+    <link rel="stylesheet" href="../css/home-style.css">
+        <!-- title icon -->
+    <link rel="icon" href="../images/SHOFHA-FILM7.png">
+    <title>ShofhA</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="menuToggle">
+        </div>
+        <nav class="navbar navbar-expand navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-lg-5" href="#">
+                    <img src="../images/SHOFHA-FILM8.png" alt="">
+                </a>
+                <div class="nav-non-collapsing" id="navbarColor01">
+                    <form class="d-flex my-3 ms-auto search-nav">
+                        <input class="form-control me-2 w-200" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light me-5" type="submit">Search</button>
+                    </form>
+                    <div class="btn-group user-info w-200 nav-item mx-5">
+                        <img style="height:40px ;"
+                            src="../images/user-icon.png">
+                        <h6>Hello User</h6>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        
+
+        <section class="container-fluid top-container p-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-bs-pasue="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/black-widow-withlogo.jpg" class="d-block w-100 h-75" alt="...">
+                        <!-- <div class="carousel-caption d-none d-md-block caption-holder-bot">
+                            <img src="../images/blackwidow_lob_log_def_06.png" alt="">
+                        </div> -->
+                        <div class="button-holder">
+                            <a href="" class="trailer-btn">
+                                <i class="fa-regular fa-circle-play play-btn"></i>
+                                <h5 class="trailer-text">Watch The Trailer</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/rings-logo.jpg" class="d-block w-100 h-75" alt="...">
+                        <!-- <div class="carousel-caption d-none d-md-block caption-holder-top">
+                            <h1 class="movie-name">RINGS</h1>
+                            <h5>EVIL IS REBORN</h5>
+                            
+                        </div> -->
+                        <div class="button-holder">
+                            <a href="" class="trailer-btn">
+                                <i class="fa-regular fa-circle-play play-btn"></i>
+                                <h5 class="trailer-text">Watch The Trailer</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/vikings.jpg" class="d-block w-100 h-75" alt="...">
+                        <!-- <div class="carousel-caption d-none d-md-block caption-holder-top">
+                            <img class="vikings-logo" src="../images/favpng_history-television-show-vikings.png" alt="">
+                        </div> -->
+                        <div class="button-holder">
+                            <a href="" class="trailer-btn">
+                                <i class="fa-regular fa-circle-play play-btn"></i>
+                                <h5 class="trailer-text">Watch The Trailer</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <section class="movies-section">
+                <div class="movies-head-box">
+                    <h2 class="movies-head white">Trending</h2>
+                </div>
+                <div class="row">
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/MV5BYTQzZjhiYjYtNDMzOS00ZjNiLTg2MGMtYWZmYWNjN2U5YTVmXkEyXkFqcGdeQXVyNjI3OTcxOTU@._V1_.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 8.5
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Rings</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/91500abd4705dbb1f4f3a92870252178.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 10.0
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Black Widow</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/viking-poster.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 9.5
+                        </div>
+                        
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Vikings</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                </div>
+                <div class="movies-head-box">
+                    <h2 class="movies-head white">Top Movies</h2>
+                </div>
+                <div class="row">
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/thegodfather.jpg" alt="">
+                        <div class="lables">
+                            <i class="fa-solid fa-star"></i> 10.0
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">The God Father</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/interstellar-127916-poster-xlarge.jpg" alt="">
+                        <div class="lables">
+                            <i class="fa-solid fa-star"></i> 9.0
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Interstellar</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/endgame.jpg" alt="">
+                        <div class="lables">
+                            <i class="fa-solid fa-star"></i> 9.5
+                        </div>
+                        
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Avengers: End Game</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                </div>
+                <div class="movies-head-box">
+                    <h2 class="movies-head white">Latest Movies</h2>
+                </div>
+                <div class="movies-container row">
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/snh_online_6072x9000_posed_01.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 9.0
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Spider Man: No Way Home</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/nogoa.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 8.5
+                        </div>
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">No One Gets Out Alive</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="pic-container col-xl-4 col-sm-12">
+                        <div class="entire-box w-200">
+                            <img class="pic w-200" src="../images/tno.jpg" alt="">
+                        <div class="lables">
+                            <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --> 7.0
+                        </div>
+                        
+                        <div class="entry-holder">
+                            <div class="entry-text">
+                                <a class="watch-text" href="">
+                                    <svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path></svg><!-- <i class="fa-solid fa-play"></i> Font Awesome fontawesome.com --> Watch Now
+                                </a>
+                                <a href="" class="entry-title fs-6 white">Trust No One</a>
+                                <div class="genre">
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre ws">Genre</p>
+                                    <p class="sub-genre grey">Date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+
+            </section>
+
+        </section>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <li class="nav-item dropdown">
+            <form class="my-3 search-side">
+                <input class="form-control me-2 w-200" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light me-5" type="submit">Search</button>
+            </form>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Movies
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item fs-5" href="#">Action</a></li>
+                <li><a class="dropdown-item fs-5" href="#">Another action</a></li>
+                <li><a class="dropdown-item fs-5" href="#">Something else here</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TV Series
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item fs-5" href="#">Action</a></li>
+                <li><a class="dropdown-item fs-5" href="#">Another action</a></li>
+                <li><a class="dropdown-item fs-5" href="#">Something else here</a></li>
+            </ul>
+        </li>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="../js/home.js"></script>
+
+</body>
+<footer>
+    <p class="mt-5 mb-3 text-muted p-5">&copy; Mazin Islam</p>
+</footer>
+
+</html>
