@@ -80,6 +80,19 @@ input[type="email"] {
 }
 .form-floating{position: relative;} /* necessary to give position: relative to parent. */
 input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+.warning{
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+.warning p{
+    color: red;
+}
+.warning.error{
+    opacity: 1;
+}
 .effect-8,
 .effect-9{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
 

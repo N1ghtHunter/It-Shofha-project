@@ -60,7 +60,7 @@
         
 
         <section class="container-fluid top-container p-0">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-bs-pasue="true">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-bs-pasue="hover" data-bs-interval="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -77,10 +77,18 @@
                             <img src="../images/blackwidow_lob_log_def_06.png" alt="">
                         </div> -->
                         <div class="button-holder">
-                            <a href="" class="trailer-btn">
+                            <!-- <a href="" class="trailer-btn">
                                 <i class="fa-regular fa-circle-play play-btn"></i>
                                 <h5 class="trailer-text">Watch The Trailer</h5>
-                            </a>
+                            </a> -->
+                            <div class="m-play-btn firstBtn" id="firstBtn">
+                                <div class="m-play firstPlay"></div>
+                                <p>Watch Trailer</p>
+                            </div>
+                        </div>
+                        <div class="m-clip firstClip">
+                            <video class="firstVid" src="../images/Marvel Studios' Black Widow - Official Trailer.mp4" controls></video>
+                            <span class="m-close"></span>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -91,10 +99,18 @@
                             
                         </div> -->
                         <div class="button-holder">
-                            <a href="" class="trailer-btn">
+                            <!-- <a href="" class="trailer-btn">
                                 <i class="fa-regular fa-circle-play play-btn"></i>
                                 <h5 class="trailer-text">Watch The Trailer</h5>
-                            </a>
+                            </a> -->
+                            <div class="m-play-btn" id="secBtn">
+                                <div class="m-play"></div>
+                                <p>Watch Trailer</p>
+                            </div>
+                        </div>
+                        <div class="m-clip">
+                            <video src="../images/SampleVideo_1280x720_2mb.mp4" controls></video>
+                            <span class="m-close"></span>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -103,10 +119,18 @@
                             <img class="vikings-logo" src="../images/favpng_history-television-show-vikings.png" alt="">
                         </div> -->
                         <div class="button-holder">
-                            <a href="" class="trailer-btn">
+                            <!-- <a href="" class="trailer-btn">
                                 <i class="fa-regular fa-circle-play play-btn"></i>
                                 <h5 class="trailer-text">Watch The Trailer</h5>
-                            </a>
+                            </a> -->
+                            <div class="m-play-btn" id="thirdBtn">
+                                <div class="m-play"></div>
+                                <p>Watch Trailer</p>
+                            </div>
+                        </div>
+                        <div class="m-clip">
+                            <video src="../images/SampleVideo_1280x720_2mb.mp4" controls></video>
+                            <span class="m-close"></span>
                         </div>
                     </div>
                 </div>
@@ -121,6 +145,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <!-- Movies SECTION -->
             <section class="movies-section">
                 <div class="movies-head-box">
                     <h2 class="movies-head white">Trending</h2>
@@ -373,15 +398,204 @@
         </li>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="../js/home.js"></script>
 
 </body>
-<footer>
+<!-- <footer>
     <p class="mt-5 mb-3 text-muted p-5">&copy; Mazin Islam</p>
+</footer> -->
+<footer class="text-white">
+    <div class="container p-4 foooter-container">
+        <!-- Section: Social media -->
+        <section class="mb-4 d-flex justify-content-center">
+            <!-- Facebook -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Sunt distinctio earum repellat quaerat
+                voluptatibus placeat nam, commodi optio pariatur est
+                quia magnam eum harum corrupti dicta, aliquam sequi
+                voluptate quas.
+            </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div
+                    id="contactUs"
+                    class="col-lg-3 col-md-6 mb-4 mb-md-0"
+                >
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p>
+                        <i class="fas fa-home me-3"></i> Helmyt Elzayton, Cairo, Egypt
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone me-3"></i> + 01 234
+                        567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print me-3"></i> + 01 234
+                        567 89
+                    </p>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+        © 2022 Copyright: Mazin Islam
+    </div>
+    <!-- Copyright -->
 </footer>
 
 </html>
