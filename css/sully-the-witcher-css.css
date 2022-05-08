@@ -1,0 +1,1157 @@
+    /* global */
+    
+    @font-face {
+        font-family: 'crow';
+        src: url(../fonts/TheCrowShadowGrunge.ttf);
+    }
+    
+    @font-face {
+        font-family: 'witcher';
+        src: url(../fonts/Thewitcher-jnOj.ttf);
+    }
+    
+    @font-face {
+        font-family: 'ligen';
+        src: url(../fonts/Legendaire\ FREE.ttf);
+    }
+    
+    @font-face {
+        font-family: 'jan';
+        src: url(../fonts/JANCIENI.TTF);
+    }
+    
+    @import url(" https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+    * {
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .nav-non-collapsing {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        min-width: 320px;
+        overflow: auto;
+        background-color: #111;
+    }
+    
+    .white {
+        color: white;
+    }
+    
+    .w-200 {
+        width: 200px;
+    }
+    
+    .trans-500 {
+        transition: all 500ms;
+    }
+    /* navbar */
+    
+    nav.navbar {
+        position: absolute;
+        z-index: 4;
+        right: 0px;
+        left: 0px;
+    }
+    
+    .container-fluid {
+        position: relative;
+    }
+    
+    .navbar-brand {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    
+    .navbar-brand img {
+        width: 125px;
+    }
+    
+    #navbarColor01 {
+        transition: margin-right .5s;
+    }
+    
+    input[type="search"] {
+        /* background-color:; */
+        border-radius: 25px;
+        border: none;
+        margin-left: auto;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .user-info {
+        display: flex;
+        height: auto;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        color: white;
+        gap: 10px;
+    }
+    
+    .dropdown-toggle-split {
+        color: white !important;
+    }
+    
+    .user-info h6 {
+        margin: 0;
+    }
+    
+    .menuToggle {
+        z-index: 1000 !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 80px;
+        width: 60px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+    
+    .menuToggle.active {
+        position: fixed;
+        top: auto;
+    }
+    
+    .menuToggle::after {
+        content: " ";
+        z-index: 1000 !important;
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background: #000;
+        transform: translateY(-8px);
+        transition: 0.5s;
+    }
+    
+    .menuToggle::before {
+        content: " ";
+        z-index: 1000 !important;
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background: #000;
+        transform: translateY(8px);
+        transition: 0.5s;
+        box-shadow: 0 -8px 0 #000;
+    }
+    
+    .menuToggle.active::after {
+        transform: translateY(0px) rotate(45deg);
+        background-color: red;
+        z-index: 1000 !important;
+    }
+    
+    .menuToggle.active::before {
+        transform: translateY(0px) rotate(-45deg);
+        box-shadow: 0 0 0 transparent;
+        background-color: red;
+        z-index: 1000 !important;
+    }
+    /* sidebar */
+    
+    .search-side {
+        display: none;
+    }
+    
+    .dropdown-menu {
+        background-color: #212529;
+    }
+    
+    .dropdown {
+        list-style: none;
+    }
+    
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 100;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        right: 0;
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+        display: block;
+    }
+    
+    .sidenav>li {
+        padding-left: 10px;
+    }
+    
+    .sidenav a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .side-fullwidth {
+        width: 100%;
+    }
+    
+    .side-width {
+        width: 250px;
+    }
+    
+    .margin-250 {
+        margin-right: 250px;
+    }
+    
+    #main {
+        transition: margin-right .5s;
+        min-height: 100vh;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    /*Top container */
+    
+    .button-holder {
+        position: absolute;
+        /* left:calc(50% - 190px); */
+        /* bottom: 50%; */
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* width: 380px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: -5px 5px 45px -2px rgba(0,0,0,0.62);
+-webkit-box-shadow: -5px 5px 45px -2px rgba(0,0,0,0.62);
+-moz-box-shadow: -5px 5px 45px -2px rgba(0,0,0,0.62); */
+    }
+    
+    .trailer-btn {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        color: #F0F0F0;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .trailer-text {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    
+    .play-btn {
+        font-size: 70px;
+        color: white;
+        padding-right: 10px;
+    }
+    
+    .fadeInTop {
+        -webkit-animation: fadeInTop 2s both;
+        -moz-animation: fadeInTop 2s both;
+        -o-animation: fadeInTop 2s both;
+        animation: fadeInTop 2s both;
+    }
+    
+    @-webkit-keyframes fadeInTop {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @-moz-keyframes fadeInTop {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @-o-keyframes fadeInTop {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeInTop {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* responsive */
+    
+    @media screen and (max-width:900px) {
+        .navbar-brand img {
+            width: 100px;
+        }
+        input[type="search"] {
+            width: 200px;
+            height: 80%;
+            font-size: 0.9rem;
+        }
+        button[type="submit"] {
+            font-size: 0.9rem;
+            padding: 4px;
+        }
+        .trailer-text {
+            font-size: 1rem !important;
+        }
+        .play-btn {
+            font-size: 40px !important;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .search-nav {
+            display: none !important;
+        }
+        .search-side {
+            display: flex !important;
+            justify-content: center;
+            padding: 8px;
+        }
+        .user-info {
+            margin: 0 20px;
+        }
+        input[type="search"] {
+            margin-left: 0 !important;
+            width: 100%;
+            height: 40px;
+            border-radius: 0.25rem;
+        }
+        button[type="submit"] {
+            width: 30%;
+        }
+        .sidenav .nav-item {
+            width: 100%;
+        }
+        #mySidenav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .user-info {
+            margin: 0px 10px;
+            width: 171px;
+        }
+        .navbar-brand img {
+            width: 80px;
+        }
+    }
+    
+    footer {
+        border-top: 1px solid #fff;
+        background-color: #171717 !important;
+        width: 100%;
+    }
+    
+    section a.btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 2px solid;
+    }
+    
+    .foooter-container {
+        text-align: left;
+    }
+    
+    div ul>li {
+        margin-bottom: 10px;
+    }
+    
+    ul li>a {
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.5s;
+        padding: 4px 8px;
+    }
+    
+    ul li>a:hover {
+        background-color: #fff;
+        color: #000 !important;
+        border: 1px solid #fff;
+    }
+    /*the witcher*/
+    
+    a:hover {
+        color: rgb(189, 189, 189);
+        text-decoration: none;
+    }
+    
+    .sully-the-witcher {
+        position: relative;
+        width: 100%;
+    }
+    
+    .sully_background {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/the\ _witcher.JPG);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+    
+    .sully_circle::after {
+        content: " ";
+        border: 2px solid white;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        left: 73%;
+        top: 30%;
+    }
+    
+    .sully_a_watch {
+        position: absolute;
+        left: 81.5%;
+        top: 48%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'witcher';
+        font-size: 200%;
+        text-decoration: none;
+        letter-spacing: 1px;
+        line-height: 90%;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .sully_watch {
+        color: #979797eb;
+        border-bottom: 1px solid #979797eb;
+    }
+    
+    .sully_now {
+        color: black;
+        border-bottom: 1px solid #000000eb;
+    }
+    
+    .sully_left {
+        background-image: url(../images/The-Witcher-left4.jpg);
+        background-repeat: no-repeat;
+        background-size: 101% 109%;
+        border: 1px;
+        width: 6.75rem;
+        height: 10.25rem;
+        border-radius: 55px;
+        position: absolute;
+        left: 70.5%;
+        top: 40%;
+        z-index: 1;
+        shape-outside: circle(farthest-side at 25% 25%);
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        -ms-border-radius: 55px;
+        -o-border-radius: 55px;
+        box-shadow: 10px 10px 5px rgb(63 61 61 / 18%)
+    }
+    
+    .sully_netflex {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 88.5%;
+        top: 52%;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        line-height: 10px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .sully_on {
+        color: black;
+    }
+    
+    .sully_net {
+        color: red;
+    }
+    
+    .sully_new {
+        border: 10px;
+        background-color: white;
+        width: 88px;
+        height: 23px;
+        text-align: center;
+        position: absolute;
+        left: 81.5%;
+        top: 42%;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+        font-weight: bolder;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sully_witcher {
+        font-family: 'witcher';
+        font-variant: small-caps;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1500%;
+    }
+    
+    .sully_the {
+        position: absolute;
+        left: 2.5%;
+        top: 1%;
+        color: rgb(120 120 120);
+    }
+    
+    .sully_wit {
+        position: absolute;
+        left: 11.2%;
+        top: 22%;
+        color: rgb(255, 255, 255);
+    }
+    
+    .sully_right {
+        background-image: url(../images/The-Witcher-right4.jpg);
+        background-repeat: no-repeat;
+        background-size: 94px 35px;
+        border: 1px;
+        width: 94px;
+        height: 35px;
+        border-radius: 55px;
+        position: absolute;
+        left: 2.5%;
+        top: 48%;
+        shape-outside: circle(farthest-side at 25% 25%);
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        -ms-border-radius: 55px;
+        -o-border-radius: 55px;
+        box-shadow: 10px 10px 23px rgb(63 61 61 / 18%)
+    }
+    
+    .sully_teaser1 {
+        background-image: url(../images/The-Witcher-right.jpg);
+        background-repeat: no-repeat;
+        background-size: 49px 49px;
+        border: 1px;
+        width: 202px;
+        height: 63px;
+        border-radius: 55px;
+        position: absolute;
+        left: 17%;
+        top: 30.25%;
+        shape-outside: circle(farthest-side at 25% 25%);
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        -ms-border-radius: 55px;
+        -o-border-radius: 55px;
+        box-shadow: 10px 10px 23px rgb(63 61 61 / 18%)
+    }
+    
+    .sully_season1 {
+        background-image: url(../images/the-witcher-season1.jfif);
+        background-repeat: no-repeat;
+        background-size: 210px 62px;
+        border: 1px;
+        width: 210px;
+        height: 62px;
+        border-radius: 55px;
+        position: absolute;
+        left: 17%;
+        top: 80%;
+        shape-outside: circle(farthest-side at 25% 25%);
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        -ms-border-radius: 55px;
+        -o-border-radius: 55px;
+        box-shadow: 10px 10px 10px rgb(63 61 61 / 18%);
+        display: flex;
+        padding: 10px;
+        font-family: 'witcher';
+        font-size: 80%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .sully_season2 {
+        background-image: url(../images/the-witcher-season2.webp);
+        background-repeat: no-repeat;
+        background-size: 210px 62px;
+        border: 1px;
+        width: 210px;
+        height: 62px;
+        border-radius: 55px;
+        position: absolute;
+        left: 35%;
+        top: 80%;
+        shape-outside: circle(farthest-side at 25% 25%);
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        -ms-border-radius: 55px;
+        -o-border-radius: 55px;
+        box-shadow: 10px 10px 23px rgba(255, 248, 248, 0.432);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-family: 'witcher';
+        font-size: 80%;
+    }
+    
+    .sully_season {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .sully_table {
+        font-family: 'witcher';
+        font-weight: 900;
+        color: rgb(243, 243, 243);
+        border: 0px solid rgba(0, 0, 0, 0.144);
+        width: 156px;
+        height: 100px;
+        position: absolute;
+        left: 73%;
+        top: 75%;
+        background-color: rgba(0, 0, 0, 0.144);
+        border-radius: 17%;
+        -webkit-border-radius: 17%;
+        -moz-border-radius: 17%;
+        -ms-border-radius: 17%;
+        -o-border-radius: 17%;
+        box-shadow: 10px 10px 23px rgb(63 61 61 / 18%);
+    }
+    
+    .sully_midb {
+        position: absolute;
+        left: 7%;
+        top: 8%;
+    }
+    
+    .sully_imgb {
+        width: 9%;
+    }
+    
+    .sully_rate {
+        position: absolute;
+        left: 48%;
+        top: 8%;
+    }
+    
+    .sully_star {
+        color: rgb(224, 191, 1);
+    }
+    
+    .sully_date {
+        position: absolute;
+        left: 7%;
+        top: 38.5%;
+    }
+    
+    .sully_year {
+        position: absolute;
+        left: 48%;
+        top: 38.5%;
+    }
+    
+    .sully_class {
+        position: absolute;
+        left: 7%;
+        top: 68%;
+    }
+    
+    .sully_18 {
+        position: absolute;
+        left: 48%;
+        top: 68%;
+    }
+    
+    .sully_img18 {
+        width: 25%;
+    }
+    
+    .sully_line::after {
+        content: " ";
+        border-top: 2px solid white;
+        width: 9rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        left: 3%;
+        top: 32%;
+    }
+    
+    .sully_line2::after {
+        content: " ";
+        border-top: 2px solid white;
+        width: 9rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        left: 3%;
+        top: 62%;
+    }
+    
+    .sully_line3::after {
+        content: " ";
+        border-right: 2px solid white;
+        height: 6rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        left: 41%;
+        top: 4%;
+    }
+    
+    .sully_down {
+        position: absolute;
+        left: 5%;
+        top: 82%;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .sully_downe::after {
+        content: " ";
+        border: 2px solid white;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        left: -70%;
+        top: -28.75%;
+    }
+    
+    .sully_line4::after {
+        content: " ";
+        border-right: 3px solid rgb(236, 223, 100);
+        height: 26px;
+        position: absolute;
+        left: -3%;
+        top: 2%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .sully-witcher-container {
+        padding: 150px;
+        width: 100%;
+    }
+    
+    .sully-witcher-container>div {
+        margin-bottom: 120px
+    }
+    
+    .sully_top {
+        position: relative;
+        color: white;
+        font-size: 22px;
+    }
+    
+    .sully_top_cast {
+        position: relative;
+        left: 4%;
+        top: 90%;
+        font-family: 'witcher';
+    }
+    
+    .sully_name {
+        color: red;
+        z-index: 1;
+        font-size: 15px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    
+    .sully_topcast {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .sully_topcast div {
+        width: 33%;
+        height: 25%;
+    }
+    
+    .sully_imgtop {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .sully_namebig {
+        position: absolute;
+        display: flex;
+    }
+    
+    .sully_seasons {
+        position: relative;
+        bottom: -234px;
+        font-family: 'witcher';
+    }
+    
+    .sully_line5::after {
+        content: " ";
+        border-right: 3px solid rgb(236, 223, 100);
+        height: 26px;
+        position: absolute;
+        left: 1%;
+        top: -6%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .sully_seasons_image {
+        display: flex;
+        width: 90%;
+        height: 60vh;
+        color: #F0F0F0;
+        justify-content: center;
+    }
+    
+    .sully_season_img {
+        width: 196px;
+        height: 296px;
+        margin: -15px 24px;
+        position: relative;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    
+    .sully_season_img:hover {
+        transform: translate3d(0px, 0px, 25px);
+        -webkit-transform: translate3d(0px, 0px, 25px);
+        -moz-transform: translate3d(0px, 0px, 25px);
+        -ms-transform: translate3d(0px, 0px, 25px);
+        -o-transform: translate3d(0px, 0px, 25px);
+    }
+    
+    @keyframes come {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+            -ms-transform: translate3d(0px, 0px, 0px);
+            -o-transform: translate3d(0px, 0px, 0px);
+        }
+        100% {
+            transform: translate3d(0px, 0px, 25px);
+            -webkit-transform: translate3d(0px, 0px, 25px);
+            -moz-transform: translate3d(0px, 0px, 25px);
+            -ms-transform: translate3d(0px, 0px, 25px);
+            -o-transform: translate3d(0px, 0px, 25px);
+        }
+    }
+    
+    .sully_season_word {
+        color: #F0F0F0;
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        font-size: 22px;
+    }
+    
+    .sully_season_text {
+        padding-left: 70px;
+        color: #fff;
+        font-family: 'witcher';
+    }
+    
+    .sully_season_text :hover {
+        color: #818181;
+    }
+    
+    #sully_season_one,
+    #sully_season_two,
+    #sully_Episodes_a {
+        text-decoration: none;
+    }
+    
+    .sully-icon-season {
+        position: relative;
+        perspective: 300px;
+        max-width: 210px;
+        height: 290px;
+        overflow: hidden;
+    }
+    
+    .sully_star_season {
+        position: absolute;
+        font-size: 28px;
+        color: #e7d324;
+        top: 8px;
+        right: 5px;
+        z-index: 6;
+    }
+    
+    .sully_season_rate {
+        position: absolute;
+        font-size: 12px;
+        font-family: 'witcher';
+        color: #882e2e;
+        top: 16px;
+        right: 14px;
+        z-index: 6;
+    }
+    
+    .sully_witcher_teaser {
+        position: relative;
+        top: 89px;
+        font-family: 'witcher';
+    }
+    
+    .sully_line6::after {
+        content: " ";
+        border-right: 3px solid rgb(236, 223, 100);
+        height: 26px;
+        position: absolute;
+        left: 1%;
+        top: -14%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .sully_teaser {
+        color: #F0F0F0;
+        position: absolute;
+        left: 3%;
+        top: -15%;
+        font-size: 22px;
+    }
+    
+    .sully_video {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sully_videoteaser {
+        width: 377px;
+        height: 248px;
+    }
+    
+    .sully_Episodes {
+        position: relative;
+        bottom: 0px;
+        font-family: 'witcher';
+        height: 384px;
+        margin: 200px auto;
+    }
+    
+    .sully_line6::after {
+        content: " ";
+        border-right: 3px solid rgb(236, 223, 100);
+        height: 26px;
+        position: absolute;
+        left: 1%;
+        top: -13%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .sully_Episodes_image {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        color: #F0F0F0;
+        justify-content: center;
+    }
+    
+    .sully_Episodes_word {
+        color: #F0F0F0;
+        position: absolute;
+        left: 3%;
+        top: -14%;
+        font-size: 22px;
+    }
+    
+    .sully_ul {
+        display: flex;
+        justify-content: left;
+        width: 98%;
+        height: 341px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .sully_ul::-webkit-scrollbar {
+        visibility: hidden;
+    }
+    
+    .sully_span {
+        position: absolute;
+        left: .5%;
+        top: 35%;
+        font-size: 30px;
+        color: #e4bc4f;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .sully_span:nth-of-type(2) {
+        position: absolute;
+        left: 100%;
+        text-align: right;
+    }
+    
+    .item-a {
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        /* min-width: 330px; */
+        height: 100%;
+        position: relative;
+        left: 0;
+        text-align: center;
+        margin: 10px 20px;
+    }
+    
+    .sully_spans {
+        position: absolute;
+        left: .5%;
+        top: 35%;
+        font-size: 30px;
+        color: #e4bc4f;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .sully_spans:nth-of-type(2) {
+        position: absolute;
+        left: 100%;
+        text-align: right;
+    }
+    
+    .item-b {
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        /* min-width: 330px; */
+        height: 100%;
+        position: relative;
+        left: 0;
+        text-align: center;
+        margin: 10px 20px;
+    }
+    
+    .sully_ull {
+        display: flex;
+        justify-content: left;
+        width: 98%;
+        height: 341px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .sully_ull::-webkit-scrollbar {
+        visibility: hidden;
+    }
