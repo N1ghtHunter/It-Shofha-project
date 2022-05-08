@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/a4f9369c2e.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css style -->
+		<link rel="stylesheet" href="../css/second.css" />
+		<!-- title icon -->
+		<link rel="icon" href="../images/SHOFHA-FILM7.png" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="main">
+			<div class="menuToggle"></div>
+			<nav class="navbar navbar-expand navbar-dark bg-transparent">
+				<div class="container-fluid">
+					<a class="navbar-brand ms-lg-5" href="#">
+						<img src="../images/SHOFHA-FILM8.png" alt="" />
+					</a>
+					<div class="nav-non-collapsing" id="navbarColor01">
+						<form class="d-flex my-3 ms-auto search-nav">
+							<input
+								class="form-control me-2 w-200"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								class="btn btn-outline-light me-5"
+								type="submit"
+							>
+								Search
+							</button>
+						</form>
+						<div
+							class="btn-group user-info w-200 nav-item mx-5"
+						>
+							<img
+								style="height: 40px"
+								src="../images/user-icon.png"
+							/>
+							<h6>Hello User</h6>
+							<button
+								type="button"
+								class="btn dropdown-toggle dropdown-toggle-split"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<span class="visually-hidden"
+									>Toggle Dropdown</span
+								>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li>
+									<a class="dropdown-item" href="#"
+										>Profile</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Settings</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Something else here</a
+									>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Log Out</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+		<!-- start from here -->
+        <div class="main-container">
+            <div class="movie-image">
+                <img src="../files/images/A1.jpeg" alt="">
+            </div>
+            <div class="movie-desc">
+                <p>Batman ventures into Gotham City's underworld when a sadistic <br>
+                   killer leaves behind a trail of cryptic clues. As the evidence <br>
+                   begins to lead closer to home and the scale of the perpetrator's <br>
+                   plans become clear, he must forge new relationships, unmask the <br>
+                   culprit and bring justice to the abuse of power and corruption<br>
+                   that has long plagued the metropolis. </p>
+             </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Country </th>
+                            <th> Language </th>
+                            <th> Type </th>
+                            <th> Running Time </th>
+                            <th> Release Date </th>
+                            <th> Rate </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> United States </td>
+                            <td> English </td>
+                            <td> Action, Adventure </td>
+                            <td> 2h 56m </td>
+                            <td> 1 march 2022</td>
+                            <td> 8/10 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="movie-actors">
+                <div class="actor">
+                    <img src="../files/images/Robert.jpeg">
+                    <p style="color: white; font-weight: 300;"> Robert Pattinson </p>
+                </div>
+                <div class="actor">
+                    <img src="../files/images/zoe.jpeg">
+                    <p style="color: white; font-weight: 300;"> Zoe Kravitz </p>
+                </div>
+                <div class="actor">
+                    <img src="../files/images/paul.jpeg">
+                    <p style="color: white; font-weight: 300;"> Paul Dano </p>
+                </div>
+                <div class="actor">
+                    <img src="../files/images/jeffrey.jpeg">
+                    <p style="color: white; font-weight: 300;"> Jeffrey Wright </p>
+                </div>
+                <div class="actor">
+                    <img src="../files/images/john.jpeg">
+                    <p style="color: white; font-weight: 300;"> John Turturro </p>
+                </div>
+                <div class="actor">
+                    <img src="../files/images/jayme.jpeg">
+                    <p style="color: white; font-weight: 300;"> Jayme Lawson </p>
+                </div>
+
+            </div>
+            <div class="movie-video">
+                <video width="800"controls>
+                    <source src="../files/images/Batman trailer.mp4" type="video/mp4">
+                    <source src="../files/images/Batman trailer.mp4" type="video/ogg">
+                </video>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <li class="nav-item dropdown">
+            <form class="my-3 search-side">
+                <input
+                    class="form-control me-2 w-200"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                />
+                <button
+                    class="btn btn-outline-light me-5"
+                    type="submit"
+                >
+                    Search
+                </button>
+            </form>
+        </li>
+        <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                Movies
+            </a>
+            <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+                <li>
+                    <a class="dropdown-item fs-5" href="#">Action</a>
+                </li>
+                <li>
+                    <a class="dropdown-item fs-5" href="#"
+                        >Another action</a
+                    >
+                </li>
+                <li>
+                    <a class="dropdown-item fs-5" href="#"
+                        >Something else here</a
+                    >
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                TV Series
+            </a>
+            <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+                <li>
+                    <a class="dropdown-item fs-5" href="#">Action</a>
+                </li>
+                <li>
+                    <a class="dropdown-item fs-5" href="#"
+                        >Another action</a
+                    >
+                </li>
+                <li>
+                    <a class="dropdown-item fs-5" href="#"
+                        >Something else here</a
+                    >
+                </li>
+            </ul>
+        </li>
+    </div>
+
+    <script src="../js/second.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+</body>
+<footer class="text-white">
+    <div class="container p-4 foooter-container">
+        <!-- Section: Social media -->
+        <section class="mb-4 d-flex justify-content-center">
+            <!-- Facebook -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Sunt distinctio earum repellat quaerat
+                voluptatibus placeat nam, commodi optio pariatur est
+                quia magnam eum harum corrupti dicta, aliquam sequi
+                voluptate quas.
+            </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0 update">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0 update">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0 update">
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 1</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 2</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 3</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"
+                                >Link 4</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div
+                    id="contactUs"
+                    class="col-lg-3 col-md-6 mb-4 mb-md-0"
+                >
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p>
+                        <i class="fas fa-home me-3"></i> Helmyt
+                        Elzayton, Cairo, Egypt
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone me-3"></i> + 01 234
+                        567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print me-3"></i> + 01 234
+                        567 89
+                    </p>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+        © 2022 Copyright: Mazin Islam
+    </div>
+    <!-- Copyright -->
+</footer>
+</html>
