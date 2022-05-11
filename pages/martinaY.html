@@ -27,10 +27,10 @@
 			rel="stylesheet"
 		/>
 		<!-- css style -->
-		<link rel="stylesheet" href="../css/martinaY.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<!-- title icon -->
 		<link rel="icon" href="../images/SHOFHA-FILM7.png" />
-		<title>Document</title>
+		<title>ShofhA Horror</title>
 	</head>
 	<body>
 		<div id="main">
@@ -41,20 +41,27 @@
 						<img src="../images/SHOFHA-FILM8.png" alt="" />
 					</a>
 					<div class="nav-non-collapsing" id="navbarColor01">
-						<form class="d-flex my-3 ms-auto search-nav">
-							<input
-								class="form-control me-2 w-200"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button
-								class="btn btn-outline-light me-5"
-								type="submit"
-							>
-								Search
-							</button>
-						</form>
+						<div class="search-box d-flex my-3 ms-auto search-nav">
+							<input class="form-control w-200" type="search" placeholder="Search" aria-label="Search" id="search-input" data-search />
+							<input class="btn btn-outline-light" type="button" id="search-btn" value="Find" />
+							<ul id="searchResult">
+								<li><img class="inline-block" src="../images/room.jpg" alt="" /><a href="#">Room</a></li>
+								<li><img class="inline-block" src="../images/the-witcher-season-2_poster_goldposter_com_2.png" alt="" /><a href="#">The
+										Witcher</a></li>
+								<li><img class="inline-block" src="../images/The_Batman_film_poster.jpg" alt="" /><a href="#">The Batman</a></li>
+								<li>
+									<img class="inline-block" src="../images/dr strange.jpg" alt="" /><a href="#">Doctor Strange (2022)</a>
+								</li>
+								<li><img class="inline-block" src="../images/sherlock.jpg" alt="" /><a href="#">Sherlock</a></li>
+								<li><img class="inline-block" src="../images/the nun.jpg" alt="" /><a href="#">The Nun</a></li>
+								<li id="no-result">
+									<p class="text-muted">No more results found</p>
+								</li>
+							</ul>
+						</div>
+						<div id="themetoggle" class="mx-4">
+							<i class="theme-indicator"></i>
+						</div>
 						<div
 							class="btn-group user-info w-200 nav-item mx-5"
 						>
@@ -103,20 +110,20 @@
 				</div>
 			</nav>
 		<!-- start from here -->
-		<div class="tt-container-fluid">
-        	<div class="content-container">
-            	<div class="featured-content"
+		<div class="yy-container-fluid">
+        	<div class="yy-content-container">
+            	<div class="yy-featured-content"
                 	style="background: linear-gradient(to bottom, rgba(0,0,0,0) ,#151515), url(../images/photo-1606639421367-97fba5c3833a\ \(1\).png);"> 
 					<div class="top-content">
 					<img class="top-image" src="../images/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg">
 					<p class="desc">A woman wakes in a cryogenic chamber with no recollection of how she got there. As she's running out of oxygen, she must rebuild her memory to find a way out of her nightmare.</p>
 					<button class="button1">Watch Trailer</button>
 					<button class="button2">Watch Film</button>
-					<i class="fa-solid fa-plus plus"></i>
+					<i class="fa-solid fa-plus tplus"></i>
 				</div>
 			</div>
 				<div class="movie-list-container">
-					<h1 class="movie-list-title">Most popular</h1>
+					<h1 class="movie-list-title">Most popular :</h1>
 					<div class="movie-wrapper"> 
 						<div class="movie-list">
 							<div class="movie-list-item">
@@ -144,17 +151,30 @@
 								<h1 class="movie-title">child's play</h1>
 								<button class="movie-button">Watch</button>
 							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting9.jpg">
+								<h1 class="movie-title">Malignant</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting10.jpg">
+								<h1 class="movie-title">call</h1>
+								<button class="movie-button">Watch</button>
+							</div>
 							
-
+							
         				</div>
-						<i class="fa-solid fa-chevron-right arrow"  ></i>
+						  <div class="arrow">
+							  <i class="fa-solid fa-chevron-right"></i>
+						  </div>
+						
 					</div>
 					<!--33-->
         		</div>
 				
 		</div>
 				<div class="movie-list-container">
-					<h1 class="movie-list-title">Most popular</h1>
+					<h1 class="movie-list-title">Top rated :</h1>
 					<div class="movie-wrapper"> 
 						<div class="movie-list">
 							<div class="movie-list-item">
@@ -163,7 +183,7 @@
 								<button class="movie-button">Watch</button>
 							</div> 
 							<div class="movie-list-item">
-								<img class="item1" src="../images/1.jpg">
+								<img class="item1" src="../images/2.jpg">
 								<h1 class="movie-title">The conjuring2</h1>
 								<button class="movie-button">Watch</button>
 							</div>
@@ -184,15 +204,26 @@
 								<h1 class="movie-title">paranormal activity</h1>
 								<button class="movie-button">Watch</button>
 							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting11.jpg">
+								<h1 class="movie-title">insidious</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg">
+								<h1 class="movie-title">Oxygen</h1>
+								<button class="movie-button">Watch</button>
+							</div>
 						</div>
-    <i class="fa-solid fa-chevron-right arrow"  ></i>
-
-        </div>
-				
-		
-		</div>
+						<div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+						
+						
+					</div>
+					
+					
+				</div>
 				<div class="movie-list-container">
-					<h1 class="movie-list-title">Most popular</h1>
+					<h1 class="movie-list-title">Latest Movies : </h1>
 					<div class="movie-wrapper"> 
 						<div class="movie-list">
 							<div class="movie-list-item">
@@ -206,61 +237,86 @@
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting1.jpg">
+								<h1 class="movie-title">The Walking Dead</h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting2.jpg">
+								<h1 class="movie-title">The Witch </h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting3.jfif">
+								<h1 class="movie-title">The Cursed</h1>
 								<button class="movie-button">Watch</button>
 							</div>
-						
-
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting3.jfif">
+								<h1 class="movie-title">The Cursed</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting3.jfif">
+								<h1 class="movie-title">The Cursed</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							
+							
         </div>
-    <i class="fa-solid fa-chevron-right arrow"  ></i>
-
-        </div>
-				
+		  <div class="arrow">
+			  <i class="fa-solid fa-chevron-right"></i>
+		  </div>
 		
-		</div>
+	</div>
+	
+	
+</div>
 				<div class="movie-list-container">
-					<h1 class="movie-list-title">Most popular</h1>
+					<h1 class="movie-list-title">You May Also Like :</h1>
 					<div class="movie-wrapper"> 
 						<div class="movie-list">
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting4.jfif">
+								<h1 class="movie-title">Candy Man</h1>
 								<button class="movie-button">Watch</button>
 							</div> 
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting5.jfif">
+								<h1 class="movie-title">Hereditary</h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting6.jfif">
+								<h1 class="movie-title">The Sadness</h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting7.jpg">
+								<h1 class="movie-title">The Hatching</h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							<div class="movie-list-item">
-								<img class="item1" src="../images/MV5BYWFmMTllODEtNDE5Zi00ZTliLWFmZDItZDk3Y2FmZDNlMjNiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-								<h1 class="movie-title">umma</h1>
+								<img class="item1" src="../images/afterhosting8.jfif">
+								<h1 class="movie-title">It</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting8.jfif">
+								<h1 class="movie-title">It</h1>
+								<button class="movie-button">Watch</button>
+							</div>
+							<div class="movie-list-item">
+								<img class="item1" src="../images/afterhosting8.jfif">
+								<h1 class="movie-title">It</h1>
 								<button class="movie-button">Watch</button>
 							</div>
 							
         				</div>
-    <i class="fa-solid fa-chevron-right arrow"  ></i>
+						  <div class="arrow">
+							  <i class="fa-solid fa-chevron-right"></i>
+						  </div>
+						
         			</div>
 				
 		
@@ -347,202 +403,202 @@
 				</ul>
 			</li>
 		</div>
-		<script src="../js/martinaY.js"></script>
+		<footer class="text-white">
+			<div class="container p-4 foooter-container">
+				<!-- Section: Social media -->
+				<section class="mb-4 d-flex justify-content-center">
+					<!-- Facebook -->
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-facebook-f"></i
+					></a>
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-google"></i
+					></a>
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-instagram"></i
+					></a>
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="#!"
+						role="button"
+						><i class="fab fa-github"></i
+					></a>
+				</section>
+				<!-- Section: Social media -->
+	
+				<!-- Section: Text -->
+				<section class="mb-4">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Sunt distinctio earum repellat quaerat
+						voluptatibus placeat nam, commodi optio pariatur est
+						quia magnam eum harum corrupti dicta, aliquam sequi
+						voluptate quas.
+					</p>
+				</section>
+				<!-- Section: Text -->
+	
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Links</h5>
+	
+							<ul class="list-unstyled mb-0 update">
+								<li>
+									<a href="#!" class="text-white"
+										>Link 1</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 2</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 3</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 4</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+	
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Links</h5>
+	
+							<ul class="list-unstyled mb-0 update">
+								<li>
+									<a href="#!" class="text-white"
+										>Link 1</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 2</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 3</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 4</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+	
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Links</h5>
+	
+							<ul class="list-unstyled mb-0 update">
+								<li>
+									<a href="#!" class="text-white"
+										>Link 1</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 2</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 3</a
+									>
+								</li>
+								<li>
+									<a href="#!" class="text-white"
+										>Link 4</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+	
+						<!--Grid column-->
+						<div
+							id="contactUs"
+							class="col-lg-3 col-md-6 mb-4 mb-md-0"
+						>
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Contact
+							</h6>
+							<p>
+								<i class="fas fa-home me-3"></i> Helmyt
+								Elzayton, Cairo, Egypt
+							</p>
+							<p>
+								<i class="fas fa-envelope me-3"></i>
+								info@example.com
+							</p>
+							<p>
+								<i class="fas fa-phone me-3"></i> + 01 234
+								567 88
+							</p>
+							<p>
+								<i class="fas fa-print me-3"></i> + 01 234
+								567 89
+							</p>
+						</div>
+						<!--Grid column-->
+					</div>
+					<!--Grid row-->
+				</section>
+				<!-- Section: Links -->
+			</div>
+			<!-- Grid container -->
+	
+			<!-- Copyright -->
+			<div
+				class="text-center p-3 update2"
+				style="background-color: rgba(0, 0, 0, 0.2)"
+			>
+				© 2022 Copyright: Mazin Islam
+			</div>
+			<!-- Copyright -->
+		</footer>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+		<script src="../js/style.js"></script>
 	</body>
-	<footer class="text-white">
-		<div class="container p-4 foooter-container">
-			<!-- Section: Social media -->
-			<section class="mb-4 d-flex justify-content-center">
-				<!-- Facebook -->
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-facebook-f"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-twitter"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-google"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-instagram"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-linkedin-in"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-github"></i
-				></a>
-			</section>
-			<!-- Section: Social media -->
-
-			<!-- Section: Text -->
-			<section class="mb-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Sunt distinctio earum repellat quaerat
-					voluptatibus placeat nam, commodi optio pariatur est
-					quia magnam eum harum corrupti dicta, aliquam sequi
-					voluptate quas.
-				</p>
-			</section>
-			<!-- Section: Text -->
-
-			<!-- Section: Links -->
-			<section class="">
-				<!--Grid row-->
-				<div class="row">
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
-
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
-
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
-
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
-
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
-
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
-
-					<!--Grid column-->
-					<div
-						id="contactUs"
-						class="col-lg-3 col-md-6 mb-4 mb-md-0"
-					>
-						<!-- Links -->
-						<h6 class="text-uppercase fw-bold mb-4">
-							Contact
-						</h6>
-						<p>
-							<i class="fas fa-home me-3"></i> Helmyt
-							Elzayton, Cairo, Egypt
-						</p>
-						<p>
-							<i class="fas fa-envelope me-3"></i>
-							info@example.com
-						</p>
-						<p>
-							<i class="fas fa-phone me-3"></i> + 01 234
-							567 88
-						</p>
-						<p>
-							<i class="fas fa-print me-3"></i> + 01 234
-							567 89
-						</p>
-					</div>
-					<!--Grid column-->
-				</div>
-				<!--Grid row-->
-			</section>
-			<!-- Section: Links -->
-		</div>
-		<!-- Grid container -->
-
-		<!-- Copyright -->
-		<div
-			class="text-center p-3 update2"
-			style="background-color: rgba(0, 0, 0, 0.2)"
-		>
-			© 2022 Copyright: Mazin Islam
-		</div>
-		<!-- Copyright -->
-	</footer>
+	
 </html>
