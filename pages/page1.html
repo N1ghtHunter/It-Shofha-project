@@ -1,546 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<!-- bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-		<!-- Font Awesome -->
-		<script
-			src="https://kit.fontawesome.com/a4f9369c2e.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- css style -->
-		<link rel="stylesheet" href="../css/page1.css" />
-		<!-- title icon -->
-		<link rel="icon" href="../images/SHOFHA-FILM7.png" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div id="main">
-			<div class="menuToggle"></div>
-			<nav class="navbar navbar-expand navbar-dark bg-transparent">
-				<div class="container-fluid">
-					<a class="navbar-brand ms-lg-5" href="#">
-						<img src="../images/SHOFHA-FILM8.png" alt="" />
-					</a>
-					<div class="nav-non-collapsing" id="navbarColor01">
-						<div class="search-box d-flex my-3 ms-auto search-nav">
-							<input
-								class="form-control w-200"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-								id="search-input"
-								data-search
-							/>
-							<input
-								class="btn btn-outline-light"
-								type="button"
-								id="search-btn"
-								value="Find"
-							/>
-							<ul id="searchResult">
-								<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie one</a></li>
-								<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie two</a></li>
-								<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie three</a></li>
-								<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie four</a></li>
-								<li><img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie five</a></li>
-								<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie six</a></li>
-								<li id="no-result"><p class="text-muted">No more results found</p></li>
-							</ul>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/a4f9369c2e.js" crossorigin="anonymous"></script>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap"
+		rel="stylesheet" />
+	<!-- css style -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<!-- title icon -->
+	<link rel="icon" href="../images/SHOFHA-FILM7.png" />
+	<title>shofha drama</title>
+</head>
+
+<body>
+	<div id="main">
+		<div class="menuToggle"></div>
+		<nav class="navbar navbar-expand navbar-dark bg-transparent">
+			<div class="container-fluid">
+				<a class="navbar-brand ms-lg-5" href="#">
+					<img src="../images/SHOFHA-FILM8.png" alt="" />
+				</a>
+				<div class="nav-non-collapsing" id="navbarColor01">
+					<div class="search-box d-flex my-3 ms-auto search-nav">
+						<input class="form-control w-200" type="search" placeholder="Search" aria-label="Search"
+							id="search-input" data-search />
+						<input class="btn btn-outline-light" type="button" id="search-btn" value="Find" />
+						<ul id="searchResult">
+							<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie one</a>
+							</li>
+							<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie two</a>
+							</li>
+							<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie three</a>
+							</li>
+							<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie four</a>
+							</li>
+							<li><img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie five</a>
+							</li>
+							<li> <img class="inline-block" src="../images/nogoa.jpg" alt=""><a href="#">Movie six</a>
+							</li>
+							<li id="no-result">
+								<p class="text-muted">No more results found</p>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-group user-info w-200 nav-item mx-5">
+						<img style="height: 40px" src="../images/user-icon.png" />
+						<h6>Hello User</h6>
+						<button type="button" class="btn dropdown-toggle dropdown-toggle-split"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-dark">
+							<li>
+								<a class="dropdown-item" href="#">Profile</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Settings</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Log Out</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- start from here -->
+		<div class="mm-main-container">
+			<h1 class="mm-main-container-titel">drama movies</h1>
+			<div class="mm-movie-list-container">
+				<h1 class="mm-movie-list-title" style="color: aliceblue;">Latest movies</h1>
+				<div class="mm-movie-list">
+					<div class="mm-movie-list-item" >
+						<img class="mm-movie-list-item-img" src="../images/افضل-افلام-الدراما-2015-Room.jpg" alt="">
+						<h5 class="mm-movie-list-item-name">Room</h5>
+						<p class="mm-movie-list-item-desc" style="color:aliceblue;">ROOM tells the extraordinary story
+							of Jack, a spirited 5-year-old who is looked after by his loving and devoted mother. </p>
+						<a href="descreption.html" target="blank">
+							<button class="mm-movie-list-item-button">watch</button></a>
+					</div>
+					<div class="mm-movie-list-item" >
+						<img class="mm-movie-list-item-img"
+							src="../images/MV5BYWE5NjRhYzYtYTI1NS00Yzc5LTk1ZmMtZTdjZjE0ZjQ3OTBiXkEyXkFqcGdeQXVyMzI3NjY2ODc@._V1_FMjpg_UX1000_-.jpg_UY1200-.jpg"
+							alt="">
+						<h5 class="mm-movie-list-item-name">Mather</h5>
+						<p class="mm-movie-list-item-desc" style="color:aliceblue;">At its core, it is a film about the
+							male ego, the female instinct, and the most horrifying thing in the world: people who want
+							more from you than you can possibly give.</p>
+						<a href="descreption.html" target="blank">
+							<button class="mm-movie-list-item-button">watch</button>
+						</a>
+					</div>
+					<div class="mm-movie-list-item" >
+						<img class="mm-movie-list-item-img" src="../images/longert-600x800.jpg" alt="">
+						<h5 class="mm-movie-list-item-name">The Longest Ride</h5>
+						<p class="mm-movie-list-item-desc" style="color:aliceblue;">Based on the bestselling novel by
+							master storyteller Nicholas Sparks, THE LONGEST RIDE centers on the star-crossed love affair
+							between Luke.</p>
+						<a href="descreption.html" target="blank">
+							<button class="mm-movie-list-item-button">watch</button>
+						</a>
+					</div>
+					<div class="mm-movie-list-item" style="margin: 40px;">
+						<img class="mm-movie-list-item-img" src="../images/download (1).jpg" alt="">
+						<h5 class="mm-movie-list-item-name">The Trials Cate McCall</h5>
+						<p class="mm-movie-list-item-desc" style="color:aliceblue;">The Trials of Cate McCall is a 2013
+							American drama film directed and written by Karen Moncrieff and stars Kate Beckinsale, Nick
+							Nolte and Clancy Brown in pivotal roles.</p>
+						<a href="descreption.html" target="blank">
+							<button class="mm-movie-list-item-button">watch</button>
+						</a>
+					</div>
+					<div class="mm-movie-list-item" style="margin: 40px;">
+						<img class="mm-movie-list-item-img" src="../images/download (3).jpg">
+						<h5 class="mm-movie-list-item-name">before i go to sleep</h5>
+						<p class="mm-movie-list-item-desc" style="color:aliceblue;">A woman wakes up every day,
+							remembering nothing as a result of a traumatic accident in her past. </p>
+						<a href="descreption.html" target="blank">
+							<button class="mm-movie-list-item-button">watch</button>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="mm-movie-list-container">
+				<h1 class="mm-movie-list-title" style="color: aliceblue;">top rated movies</h1>
+				<div class="mm-movie-list">
+					<div class="mm-movie-list">
+						<div class="mm-movie-list-item" >
+
+							<img class="mm-movie-list-item-img" src="../images/k.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">Gifted</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">While living his carefree life
+								as a boat repairman, Frank Adler is raising his seven year old niece Mary by himself in
+								western Florida as her de facto guardian.</p>
+							<a href="descreption.html" target="blank">
+
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
 						</div>
-						<div
-							class="btn-group user-info w-200 nav-item mx-5"
-						>
-							<img
-								style="height: 40px"
-								src="../images/user-icon.png"
-							/>
-							<h6>Hello User</h6>
-							<button
-								type="button"
-								class="btn dropdown-toggle dropdown-toggle-split"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								<span class="visually-hidden"
-									>Toggle Dropdown</span
-								>
-							</button>
-							<ul class="dropdown-menu dropdown-menu-dark">
-								<li>
-									<a class="dropdown-item" href="#"
-										>Profile</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#"
-										>Settings</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#"
-										>Something else here</a
-									>
-								</li>
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-								<li>
-									<a class="dropdown-item" href="#"
-										>Log Out</a
-									>
-								</li>
-							</ul>
+
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/e.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">Sunset</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Sunset is an occult mystery
+								drama about the fin-de-siècle anxieties of the dying Austro-Hungarian empire. </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/l.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">Madame</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Anne (Collette) and Bob
+								(Keitel), a well-to-do American couple, have just moved to a beautiful manor house in
+								romantic Paris. </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/d.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">Carol</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">An aspiring photographer
+								develops an intimate relationship with an older woman in 1950s New York.</p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/c.jpg">
+							<h5 class="mm-movie-list-item-name">don't worry darling</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">The thriller is set in a
+								fictional community called Victory. Per Warner Bros., "Alice (Pugh) and Jack (Styles)
+								are lucky to be living in the idealized community of Victory.</p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
 						</div>
 					</div>
 				</div>
-			</nav>
-		
-		<!-- start from here -->
-		<div class="qq-main-container">
-			<h1 class="main-container-titel">drama movies</h1>
-			<div class="movie-list-container" >
-				<h1 class="movie-list-title" style="color: aliceblue;">Latest movies</h1>
-				<div class="movie-list">
-					<div class="movie-list-item" style="margin: 40px;">
-						<img class="movie-list-item-img" src="../images/افضل-افلام-الدراما-2015-Room.jpg" alt="">
-						<h5 class="movie-list-item-name">Room</h5>
-						<p class="movie-list-item-desc" style="color:aliceblue;">ROOM tells the extraordinary story of Jack, a spirited 5-year-old who is looked after by his loving and devoted mother. </p>
-						<a href="descreption.html" target="blank">
-						<button class="movie-list-item-button">watch</button></a>
-					</div>
-					<div class="movie-list-item" style="margin: 40px;">
-						<img class="movie-list-item-img" src="../images/MV5BYWE5NjRhYzYtYTI1NS00Yzc5LTk1ZmMtZTdjZjE0ZjQ3OTBiXkEyXkFqcGdeQXVyMzI3NjY2ODc@._V1_FMjpg_UX1000_-.jpg_UY1200-.jpg" alt="">
-						<h5 class="movie-list-item-name">Mather</h5>
-						<p class="movie-list-item-desc" style="color:aliceblue;">At its core, it is a film about the male ego, the female instinct, and the most horrifying thing in the world: people who want more from you than you can possibly give.</p>
-						<a href="descreption.html" target="blank">
-						<button class="movie-list-item-button">watch</button>
-						</a>
-					</div> <div class="movie-list-item" style="margin: 40px;">
-						<img class="movie-list-item-img" src="../images/longert-600x800.jpg" alt="">
-						<h5 class="movie-list-item-name">The Longest Ride</h5>
-						<p class="movie-list-item-desc" style="color:aliceblue;">Based on the bestselling novel by master storyteller Nicholas Sparks, THE LONGEST RIDE centers on the star-crossed love affair between Luke.</p>
-						<a href="descreption.html" target="blank">
-						<button class="movie-list-item-button">watch</button>
-						</a>
-					</div>
-					 <div class="movie-list-item" style="margin: 40px;">
-						<img class="movie-list-item-img" src="../images/download (1).jpg" alt="">
-						<h5 class="movie-list-item-name">The Trials Cate McCall</h5>
-						<p class="movie-list-item-desc" style="color:aliceblue;">The Trials of Cate McCall is a 2013 American drama film directed and written by Karen Moncrieff and stars Kate Beckinsale, Nick Nolte and Clancy Brown in pivotal roles.</p>
-						<a href="descreption.html" target="blank">
-							<button class="movie-list-item-button">watch</button>
-						</a>
-					</div>
-					<div class="movie-list-item" style="margin: 40px;">
-						<img class="movie-list-item-img" src="../images/download (3).jpg" >
-						<h5 class="movie-list-item-name">before i go to sleep</h5>
-						<p class="movie-list-item-desc" style="color:aliceblue;">A woman wakes up every day, remembering nothing as a result of a traumatic accident in her past. </p>
-						<a href="descreption.html" target="blank">
-						<button class="movie-list-item-button">watch</button>
-						</a>
-					</div> 
-			   
-			</div>		
-	   
-	</div>
-	<div class="movie-list-container">
-		<h1 class="movie-list-title" style="color: aliceblue;">top rated movies</h1>
-	 <div class="movie-list-wrapper">
-		 <div class="movie-list">
-            <div class="movie-list-item" style="margin: 40px;" >
-				
-				<img class="movie-list-item-img" src="../images/k.jpg" alt="">
-				<h5 class="movie-list-item-name">Gifted</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">While living his carefree life as a boat repairman, Frank Adler is raising his seven year old niece Mary by himself in western Florida as her de facto guardian.</p>
-				<a href="descreption.html" target="blank"> 
-					
-				<button class="movie-list-item-button">watch</button>
-			</a>
 			</div>
-			
-			<div class="movie-list-item" style="margin: 40px;"> 
-				<img class="movie-list-item-img" src="../images/e.jpg" alt="">
-				<h5 class="movie-list-item-name">Sunset</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Sunset is an occult mystery drama about the fin-de-siècle anxieties of the dying Austro-Hungarian empire. </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button" >watch</button>
-				</a>
-			</div> 
-			<div class="movie-list-item" style="margin: 40px;" >
-				<img class="movie-list-item-img" src="../images/l.jpg" alt="">
-				<h5 class="movie-list-item-name">Madame</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Anne (Collette) and Bob (Keitel), a well-to-do American couple, have just moved to a beautiful manor house in romantic Paris. </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div> 
-			<div class="movie-list-item" style="margin: 40px;">
-				<img class="movie-list-item-img" src="../images/d.jpg" alt="">
-				<h5 class="movie-list-item-name">Carol</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">An aspiring photographer develops an intimate relationship with an older woman in 1950s New York.</p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div>
-			<div class="movie-list-item" style="margin: 40px;">
-				<img class="movie-list-item-img" src="../images/c.jpg">
-				<h5 class="movie-list-item-name">don't worry darling</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">The thriller is set in a fictional community called Victory. Per Warner Bros., "Alice (Pugh) and Jack (Styles) are lucky to be living in the idealized community of Victory.</p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div> 
-		</div>
-	 </div>
-  </div>
-  	<div class="movie-list-container">
-		<h1 class="movie-list-title" style="color: aliceblue;">trending movies</h1>
-	 <div class="movie-list-wrapper">
-		 <div class="movie-list">
-            <div class="movie-list-item" style="margin: 40px;">
-				<img class="movie-list-item-img" src="../images/f.jpg" alt="">
-				<h5 class="movie-list-item-name">the true adventures of wolfboy</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Follows a young boy who runs away from home in search of his estranged mother. </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div>
-			<div class="movie-list-item" style="margin: 40px;">
-				<img class="movie-list-item-img" src="../images/j.jpg" alt="">
-				<h5 class="movie-list-item-name">what the night can do</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Luana is a 12-year-old girl struggling to grasp the world collapsing around her. Luana is a 12-year-old girl struggling to grasp the world collapsing around her.</p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div> <div class="movie-list-item" style="margin: 40px;">
-				<img class="movie-list-item-img" src="../images/h.jpg" alt="">
-				<h5 class="movie-list-item-name">the mountain between us</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Stranded after a tragic plane crash, two strangers must forge a connection to survive the extreme elements of a remote snow-covered mountain. </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div> <div class="movie-list-item" style="margin: 40px;">
+			<div class="mm-movie-list-container">
+				<h1 class="mm-movie-list-title" style="color: aliceblue;">trending movies</h1>
+				<div class="mm-movie-list">
+					<div class="mm-movie-list">
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/f.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">the true adventures of wolfboy</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Follows a young boy who runs
+								away from home in search of his estranged mother. </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/j.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">what the night can do</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Luana is a 12-year-old girl
+								struggling to grasp the world collapsing around her. Luana is a 12-year-old girl
+								struggling to grasp the world collapsing around her.</p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
+							<img class="mm-movie-list-item-img" src="../images/h.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">the mountain between us</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Stranded after a tragic plane
+								crash, two strangers must forge a connection to survive the extreme elements of a remote
+								snow-covered mountain. </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
 
-				<img class="movie-list-item-img" src="../images/i.jpg" alt="">
-				<h5 class="movie-list-item-name">the fault in our stars</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam. </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
-			</div>
-			<div class="movie-list-item" style="margin: 40px;">
+							<img class="mm-movie-list-item-img" src="../images/i.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">the fault in our stars</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">Two teenage cancer patients
+								begin a life-affirming journey to visit a reclusive author in Amsterdam. </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+						<div class="mm-movie-list-item" >
 
-				<img class="movie-list-item-img" src="../images/A.jpg" alt="">
-				<h5 class="movie-list-item-name">the madding crowd</h5>
-				<p class="movie-list-item-desc" style="color:aliceblue;">The story of independent, beautiful and headstrong Bathsheba Everdene (Carey Mulligan), who attracts three very different suitors: Gabriel Oak (Matthias Schoenaerts). </p>
-				<a href="descreption.html" target="blank">
-				<button class="movie-list-item-button">watch</button>
-				</a>
+							<img class="mm-movie-list-item-img" src="../images/A.jpg" alt="">
+							<h5 class="mm-movie-list-item-name">the madding crowd</h5>
+							<p class="mm-movie-list-item-desc" style="color:aliceblue;">The story of independent,
+								beautiful and headstrong Bathsheba Everdene (Carey Mulligan), who attracts three very
+								different suitors: Gabriel Oak (Matthias Schoenaerts). </p>
+							<a href="descreption.html" target="blank">
+								<button class="mm-movie-list-item-button">watch</button>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	 </div>
-  </div>
 		</div>
 		<!--end here-->
-		</div>
-		<div id="mySidenav" class="sidenav">
-			<li class="nav-item dropdown">
-				<form class="my-3 search-side">
-					<input
-						class="form-control me-2 w-200"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
-					/>
-					<button
-						class="btn btn-outline-light me-5"
-						type="submit"
-					>
-						Search
-					</button>
-				</form>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle"
-					href="#"
-					id="navbarDarkDropdownMenuLink"
-					role="button"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					Movies
-				</a>
-				<ul
-					class="dropdown-menu dropdown-menu-dark"
-					aria-labelledby="navbarDarkDropdownMenuLink"
-				>
-					<li>
-						<a class="dropdown-item fs-5" href="#">Action</a>
-					</li>
-					<li>
-						<a class="dropdown-item fs-5" href="#"
-							>Another action</a
-						>
-					</li>
-					<li>
-						<a class="dropdown-item fs-5" href="#"
-							>Something else here</a
-						>
-					</li>
-				</ul>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle"
-					href="#"
-					id="navbarDarkDropdownMenuLink"
-					role="button"
-					data-bs-toggle="dropdown"
-					aria-expanded="false"
-				>
-					TV Series
-				</a>
-				<ul
-					class="dropdown-menu dropdown-menu-dark"
-					aria-labelledby="navbarDarkDropdownMenuLink"
-				>
-					<li>
-						<a class="dropdown-item fs-5" href="#">Action</a>
-					</li>
-					<li>
-						<a class="dropdown-item fs-5" href="#"
-							>Another action</a
-						>
-					</li>
-					<li>
-						<a class="dropdown-item fs-5" href="#"
-							>Something else here</a
-						>
-					</li>
-				</ul>
-			</li>
-		</div>
-		
-		
-
-		<script src="../js/skeleton.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
-	</body>
-	<footer class="text-white">
-		<div class="container p-4 foooter-container">
-			<!-- Section: Social media -->
-			<section class="mb-4 d-flex justify-content-center">
-				<!-- Facebook -->
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					>
-					<i class="fab fa-facebook-f"></i
-				>
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<li class="nav-item dropdown">
+			<form class="my-3 search-side">
+				<input class="form-control me-2 w-200" type="search" placeholder="Search" aria-label="Search" />
+				<button class="btn btn-outline-light me-5" type="submit">
+					Search
+				</button>
+			</form>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+				data-bs-toggle="dropdown" aria-expanded="false">
+				Movies
 			</a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-twitter"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-google"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-instagram"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-linkedin-in"></i
-				></a>
-				<a
-					class="btn btn-outline-light btn-floating m-1"
-					href="#!"
-					role="button"
-					><i class="fab fa-github"></i
-				></a>
-			</section>
-			<!-- Section: Social media -->
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+				<li>
+					<a class="dropdown-item fs-5" href="#">Action</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="#">Another action</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="#">Something else here</a>
+				</li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+				data-bs-toggle="dropdown" aria-expanded="false">
+				TV Series
+			</a>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+				<li>
+					<a class="dropdown-item fs-5" href="#">Action</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="#">Another action</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="#">Something else here</a>
+				</li>
+			</ul>
+		</li>
+	</div>
 
-			<!-- Section: Text -->
-			<section class="mb-4">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Sunt distinctio earum repellat quaerat
-					voluptatibus placeat nam, commodi optio pariatur est
-					quia magnam eum harum corrupti dicta, aliquam sequi
-					voluptate quas.
-				</p>
-			</section>
-			<!-- Section: Text -->
 
-			<!-- Section: Links -->
-			<section class="">
-				<!--Grid row-->
-				<div class="row">
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
 
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
+	<script src="../js/apps.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+<footer class="text-white">
+	<div class="container p-4 foooter-container">
+		<!-- Section: Social media -->
+		<section class="mb-4 d-flex justify-content-center">
+			<!-- Facebook -->
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+					class="fab fa-instagram"></i></a>
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+					class="fab fa-linkedin-in"></i></a>
+			<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+		</section>
+		<!-- Section: Social media -->
 
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
+		<!-- Section: Text -->
+		<section class="mb-4">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing
+				elit. Sunt distinctio earum repellat quaerat
+				voluptatibus placeat nam, commodi optio pariatur est
+				quia magnam eum harum corrupti dicta, aliquam sequi
+				voluptate quas.
+			</p>
+		</section>
+		<!-- Section: Text -->
 
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
+		<!-- Section: Links -->
+		<section class="">
+			<!--Grid row-->
+			<div class="row">
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">Links</h5>
 
-					<!--Grid column-->
-					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-						<h5 class="text-uppercase">Links</h5>
-
-						<ul class="list-unstyled mb-0 update">
-							<li>
-								<a href="#!" class="text-white"
-									>Link 1</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 2</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 3</a
-								>
-							</li>
-							<li>
-								<a href="#!" class="text-white"
-									>Link 4</a
-								>
-							</li>
-						</ul>
-					</div>
-					<!--Grid column-->
-
-					<!--Grid column-->
-					<div
-						id="contactUs"
-						class="col-lg-3 col-md-6 mb-4 mb-md-0"
-					>
-						<!-- Links -->
-						<h6 class="text-uppercase fw-bold mb-4">
-							Contact
-						</h6>
-						<p>
-							<i class="fas fa-home me-3"></i> Helmyt
-							Elzayton, Cairo, Egypt
-						</p>
-						<p>
-							<i class="fas fa-envelope me-3"></i>
-							info@example.com
-						</p>
-						<p>
-							<i class="fas fa-phone me-3"></i> + 01 234
-							567 88
-						</p>
-						<p>
-							<i class="fas fa-print me-3"></i> + 01 234
-							567 89
-						</p>
-					</div>
-					<!--Grid column-->
+					<ul class="list-unstyled mb-0 update">
+						<li>
+							<a href="#!" class="text-white">Link 1</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 2</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 3</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 4</a>
+						</li>
+					</ul>
 				</div>
-				<!--Grid row-->
-			</section>
-			<!-- Section: Links -->
-		</div>
-		<!-- Grid container -->
+				<!--Grid column-->
 
-		<!-- Copyright -->
-		<div
-			class="text-center p-3"
-			style="background-color: rgba(0, 0, 0, 0.2)"
-		>
-			© 2022 Copyright: Mazin Islam
-		</div>
-		<!-- Copyright -->
-	</footer>
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">Links</h5>
+
+					<ul class="list-unstyled mb-0 update">
+						<li>
+							<a href="#!" class="text-white">Link 1</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 2</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 3</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 4</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase">Links</h5>
+
+					<ul class="list-unstyled mb-0 update">
+						<li>
+							<a href="#!" class="text-white">Link 1</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 2</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 3</a>
+						</li>
+						<li>
+							<a href="#!" class="text-white">Link 4</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div id="contactUs" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						Contact
+					</h6>
+					<p>
+						<i class="fas fa-home me-3"></i> Helmyt
+						Elzayton, Cairo, Egypt
+					</p>
+					<p>
+						<i class="fas fa-envelope me-3"></i>
+						info@example.com
+					</p>
+					<p>
+						<i class="fas fa-phone me-3"></i> + 01 234
+						567 88
+					</p>
+					<p>
+						<i class="fas fa-print me-3"></i> + 01 234
+						567 89
+					</p>
+				</div>
+				<!--Grid column-->
+			</div>
+			<!--Grid row-->
+		</section>
+		<!-- Section: Links -->
+	</div>
+	<!-- Grid container -->
+
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+		© 2022 Copyright: Mazin Islam
+	</div>
+	<!-- Copyright -->
+</footer>
+
 </html>
