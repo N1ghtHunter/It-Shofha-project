@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a4f9369c2e.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans+Extra+Condensed:wght@200;400&family=Poppins:wght@300&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Skranji&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- css style -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- title icon -->
+    <link rel="icon" href="../images/SHOFHA-FILM7.png" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="menuToggle"></div>
+        <nav class="navbar navbar-expand navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-lg-5" href="home.html">
+                    <img src="../images/SHOFHA-FILM8.png" alt="" />
+                </a>
+                <div class="nav-non-collapsing" id="navbarColor01">
+                    <div class="search-box d-flex my-3 ms-auto search-nav">
+						<input class="form-control w-200" type="search" placeholder="Search" aria-label="Search" id="search-input" data-search />
+						<input class="btn btn-outline-light" type="button" id="search-btn" value="Find" />
+						<ul id="searchResult">
+							<li><img class="inline-block" src="../images/jhon snow.jpg" alt="" /><a href="got.html">Game Of Thrones</a></li>
+							<li><img class="inline-block" src="../images/f&f8.jpg" alt="" /><a href="fast&furious.html">Fast & Furious 8</a></li>
+							<li><img class="inline-block" src="../images/room.jpg" alt="" /><a href="room.html">Room</a></li>
+							<li><img class="inline-block" src="../images/the-witcher-season-2_poster_goldposter_com_2.png" alt="" /><a href="sully-the-witcher.html">The
+									Witcher</a></li>
+							<li><img class="inline-block" src="../images/The_Batman_film_poster.jpg" alt="" /><a href="thebatman.html">The Batman</a></li>
+							<li>
+								<img class="inline-block" src="../images/dr strange.jpg" alt="" /><a href="drstrange.html">Doctor Strange (2022)</a>
+							</li>
+							<li><img class="inline-block" src="../images/sherlock.jpg" alt="" /><a href="sherlock.html">Sherlock</a></li>
+							<li><img class="inline-block" src="../images/the nun.jpg" alt="" /><a href="thenun.html">The Nun</a></li>
+							<li id="no-result">
+								<p class="text-muted">No more results found</p>
+							</li>
+						</ul>
+					</div>
+                    <div id="themetoggle" class="mx-4">
+                        <i class="theme-indicator"></i>
+                    </div>
+                    <div class="btn-group user-info w-200 nav-item mx-5">
+                        <img style="height: 40px" src="../images/user-icon.png" />
+                        <h6>Hello User</h6>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="mycarousel" class="sully_slide carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="sully_inner carousel-inner">
+                <div class="sully_carousel carousel-item active" style="
+                        background-image: url(../images/the-witcher-maine.jpg);
+							
+						">
+                    <div class="sully_container container">
+                        <div>
+                            <a class="sully_link2 carousel-caption d-none d-md-block" href="sully-the-witcher.html"><i
+                                    class="bi bi-play-circle-fill"></i>
+                                WATCH</a>
+                            <div><img class="sully_witcherpng" src="../images/pngaaa.com-310438.png" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sully_carousel carousel-item" style="
+							background-image: url(../images/cropped-1280-1024-613994\ \(3\).jpg);
+						">
+                    <div class="sully_container container">
+                        <a class="sully_link2 carousel-caption d-none d-md-block" href="got.html"><i class="bi bi-play-circle-fill"></i>
+                            WATCH</a>
+                        <div><img class="sully_god" src="../images/toppng.com-ames-of-thrones-png-game-of-throne-logo-401x185.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="sully_carousel carousel-item" style="
+							background-image: url(../images/you222.jpg);
+						">
+                    <div class="sully_container container">
+                        <a class="sully_link2 carousel-caption d-none d-md-block" href="sully-you-html.html"><i class="bi bi-play-circle-fill"></i>
+                            WATCH</a>
+                        <div><img class="sully_witcherpng" src="../images/you png.webp" alt=""></div>
+                    </div>
+                </div>
+                <a href="#mycarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="visually-hidden">previous</span>
+                    <span class="carousel-control-prev" aria-hidden="true"><i class="bi bi-chevron-double-left"></i></span>
+                </a>
+                <a href="#mycarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="visually-hidden">next</span>
+                    <span class="carousel-control-next" aria-hidden="true"><i class="bi bi-chevron-double-right"></i></span>
+                </a>
+            </div>
+        </div>
+        <!--romantic-->
+        <div id="sully_romantic" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Romantic</p>
+            </div>
+            <span class="sully_span"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_span"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/romantic/how-i-met-your-mother.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">How I Met Your Mother</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/romantic/this-is-us.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">This Is Us</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/romantic/you5.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">You</p>
+                                <a id="sully_romntic_a" href="sully-you-html.html">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/romantic/love.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Love</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/the-spanish-princess.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Spanish Princess</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/romantic/osmosis.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Osmosis</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/11.22.63.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">11.22.63</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/virgin-river.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Virgin River</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/Emily -in-paris.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Emily In Paris</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/firefly-lane.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Firefly Lane</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---11-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/gossip-girl.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Gossip Girl</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---12-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/dracula.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Dracula</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---13-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/little-voice.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Little Voice</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---14-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/bridgerton.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Bridgerton</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---15-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/love-life.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Love Life</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---16-->
+                <div class="item-a">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/romantic/normal-people.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Normal People</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--action-->
+        <div id="sully_action" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Action</p>
+            </div>
+            <span class="sully_spanb"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spanb"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/action/the-witcher.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Witcher</p>
+                                <a id="sully_romntic_a" href="sully-the-witcher.html">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/action/moon-knight.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Moon Knight</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/action/vikings.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Vikings</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/action/see.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">SEE</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/loki.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Loki</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/action/reacher.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Reacher</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/the-lost-symbol.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Lost Symbol</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/the-mandalorian.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Mandalorian</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/viking-valhalla.jfif" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Vikings: Valhalla </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/the-wheel-of-time.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Wheel Of Time</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---11-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/hawkeye.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Hawkeye</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---12-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/24.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">24</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---13-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/halo.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Halo</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---14-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/bard of blood.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Bard Of Blood</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---15-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/warrior nun.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Warrior Nun</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---16-->
+                <div class="item-b">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/action/six.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Six</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--crime-->
+        <div id="sully_crime" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Crime</p>
+            </div>
+            <span class="sully_spanc"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spanc"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/crime/elite.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Elite</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/crime/the night of.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Night Of</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/crime/breaking bad.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Breaking Bad</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/crime/criminal uk.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Criminal: Uk</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/five days.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Five Days</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/crime/ozark.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Ozark</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/mayor of kingstown.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Mayor Of Kingstown</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/safe.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Safe</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/sherlock.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Sharlock </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/the good fight.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Good Fight</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---11-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/the night of.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Night Of</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---12-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/dexter.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Dexter</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---13-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/hache.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Hache</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---14-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/the great heist.jpg " alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Great Heist</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---15-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/Alta Mar.jpg " alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Alta Mar</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---16-->
+                <div class="item-c">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/crime/the innocent.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Innocent</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--drama-->
+        <div id="sully_drama" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Drama</p>
+            </div>
+            <span class="sully_spand"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spand"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/drama/suits.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Suits</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/drama/got.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Game Of Thrones</p>
+                                <a id="sully_romntic_a" href="got.html">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/drama/maid.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Maid</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/drama/forever.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">For Ever</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/his dark materials.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">His Dark Materials</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/drama/chemoby.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Chemoby</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/collateral.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Collateral</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/lisey's story.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Lisey's story</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/mr roboot.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">MR: Roboot </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/lost in space.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Lost In Space</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---11-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/sharp objects.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Sharp Objects</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---12-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/soulmates.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Soulmates</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---13-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/the leftlovers.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Left Lovers</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---14-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/the_stranger.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Stranger</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---15-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/undone.jpg " alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Undone</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---16-->
+                <div class="item-d">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/drama/stranger things.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Stranger Things</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--animation-->
+        <div id="sully_animation" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Animation</p>
+            </div>
+            <span class="sully_spanf"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spanf"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/animation/arcane.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Arcane</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/animation/the snoopy.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Snoopy</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/animation/the simpsons.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Simpsons</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/animation/wizards.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Wizards</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/animation/Olaf presents.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Olaf Presents</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img"
+                                            src="../images/animation/Tom and jerry in New york.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Tom And Jerry In New York</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/animation/Disney mickey mouse.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Disney Mickey Mouse</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img"
+                                            src="../images/animation/the boss baby back in business.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Boss Baby Back In Business</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/animation/monsters at work.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Mosters At Work </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-f">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/animation/Johnny test.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Johnny Test</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--mystery-->
+        <div id="sully_mystery" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Mystery</p>
+            </div>
+            <span class="sully_spanE"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spanE"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/mystery/DARK.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Dark</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/mystery/13 REASONS WHY.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">13 Reasons Why</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/mystery/HOUSE.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">House</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/mystery/THE100.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The 100</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/mystery/UFO.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">UFO</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/mystery/gone for good.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Gone For Good</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/mystery/pieces of her.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Pieces Of Her</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/mystery/zoo.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Zoo</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/mystery/LISEY'S STORY.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Lisey's Story </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---10-->
+                <div class="item-E">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/mystery/from.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">From</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Biography-->
+        <div id="sully_biography" class="sully_romntics">
+            <div class="sully_romntic_word">
+                <p>Biography</p>
+            </div>
+            <span class="sully_spanH"><i class="fa-solid fa-angle-left"></i></span>
+            <span class="sully_spanH"><i class="fa-solid fa-chevron-right"></i></span>
+            <div class="sully_ull">
+                <!---1-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/Biography/the last dance.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">The Last Dans</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---2-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/Biography/dear.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Dear</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---3-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier">
+                                        <img class="sully_tv_img" src="../images/Biography/dickinson.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Dickinson</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---4-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/Biography/how to become tyrant.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.5
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">How To Become Tyrant</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---5-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/Biography/Selena the series.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Selena The Series</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---6-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"> <img class="sully_tv_img" src="../images/Biography/trust.jpg" alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Trust</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---7-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/Biography/when they see us.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">When They See Us</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---8-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_romntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/Biography/they call me magic.jpg"
+                                            alt="" /></div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        9.0
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">They Call Me Magic</p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---9-->
+                <div class="item-H">
+                    <div class="sully_contanir">
+
+                        <div class="sully_Eromntic_image">
+                            <div class="sully-romntic">
+
+                                <div class="sully-icon-tv">
+                                    <div class="sully-img-contanier"><img class="sully_tv_img" src="../images/Biography/super pumped.jpg" alt="" />
+                                    </div>
+                                    <i class="fa-solid fa-star sully_star_tv"></i>
+                                    <div class="sully_tv_rate">
+                                        8.7
+                                    </div>
+                                </div>
+                                <p class="sully_tv_text">Super Pumped </p>
+                                <a id="sully_romntic_a" href="#">watch now </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <a class="sully_home2" href="home.html"><i class="bi bi-house-heart"></i></a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+		<li class="nav-item dropdown">
+			<form class="my-3 search-side">
+				<input class="form-control me-2 w-200" type="search" placeholder="Search" aria-label="Search" />
+				<button class="btn btn-outline-light me-5" type="submit">Search</button>
+			</form>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Movies
+			</a>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+				<li>
+					<a class="dropdown-item fs-5" href="Trending.html">Trending</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="latestmovies.html">Latest</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="drama.html">Drama</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="comedy.html">Comedy</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="horror.html">Horror</a>
+				</li>
+                <li>
+					<a class="dropdown-item fs-5" href="romantic.html">Romantic</a>
+				</li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				TV Series
+			</a>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+				
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_romantic">Romantic</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_action">Action</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_crime">Crime</a>
+				</li>
+				<li>
+					<a href="sully-main.html#sully_drama" class="dropdown-item fs-5">Drama</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_animation">Animation</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_mystery">Mystery</a>
+				</li>
+				<li>
+					<a class="dropdown-item fs-5" href="sully-main.html#sully_biography">Biography</a>
+				</li>
+			</ul>
+		</li>
+		<a href="#contactUs" class="nav-item">Contact Us</a>
+	</div>
+    <footer class="text-white">
+        <div class="container p-4 foooter-container">
+            <!-- Section: Social media -->
+            <section class="mb-4 d-flex justify-content-center">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+                    optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div id="contactUs" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p>
+                            <i class="fas fa-home me-3"></i> Helmyt
+                            Elzayton, Cairo, Egypt
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i> + 01 234
+                            567 88
+                        </p>
+                        <p>
+                            <i class="fas fa-print me-3"></i> + 01 234
+                            567 89
+                        </p>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright: Kerolus Soliman
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- <script src="season1.js"></script> -->
+
+    <script src="sully-js-nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
+</body>
+
+</html>
